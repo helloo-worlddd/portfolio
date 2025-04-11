@@ -1,0 +1,79 @@
+:root {
+    --bg-color: #f9f9f9;
+    --text-color: #333;
+    --card-bg: white;
+    --nav-bg: #333;
+    --link-color: #4CAF50;
+  }
+  
+  body.dark-mode {
+    --bg-color: #1e1e1e;
+    --text-color: #f1f1f1;
+    --card-bg: #2c2c2c;
+    --nav-bg: #111;
+    --link-color: #66ff99;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #toggle-theme {
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: var(--nav-bg);
+    padding: 10px 0;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  section {
+    margin: 30px 0;
+  }
+  
+  .project-card {
+    background: var(--card-bg);
+    padding: 15px;
+    margin: 15px 0;
+    border-left: 5px solid var(--link-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .project-card a {
+    text-decoration: none;
+    color: var(--link-color);
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+  }
+  
